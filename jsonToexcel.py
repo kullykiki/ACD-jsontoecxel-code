@@ -15,7 +15,7 @@ acd_report =    [   'ACD_january2019',
                 ]
 
 for file in acd_report:
-    file_js = '"' + file + ".json" + '"'
-    file_xlsx = '"' + file + ".xlsx" + '"'
+    file_js = '"./json file/' + file + ".json" + '"'
+    file_xlsx = '"./excel file/' + file + ".xlsx" + '"'
     # pandas.read_json("ACD_january2020.json").to_excel("ACD_january2020.xlsx", index=False)
     print(f'command : pandas.read_json({file_js}).to_excel({file_xlsx}, index=False)')
