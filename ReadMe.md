@@ -2,7 +2,7 @@
 
 ## Install package need to use
 
-### Pandas
+### <span style="color:#E74C3C">**Pandas**</span>
 
 Pandas for transform file type
 
@@ -18,7 +18,7 @@ if error may be by pip not lasted version . Must upgrade pip before install pand
 python -m pip install --upgrade pip
 ```
 
-### Xlrd
+### <span style="color:#1E8449">**Xlrd**</span>
 
 Xlrd for count row of excel file
 
