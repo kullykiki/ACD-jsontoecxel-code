@@ -1,5 +1,6 @@
 import pandas
 import os
+import xlrd as xl
 # acd_report =    [   'ACD_january2019',
 #                     'ACD_february2019',
 #                     'ACD_march2019',
@@ -29,3 +30,7 @@ for file in acd_report:
     json_file = file  + '.json'
     xlsx_file =  file + '.xlsx'
     pandas.read_json(os.path.join(json_path, json_file)).to_excel(os.path.join(xlsx_path, xlsx_file), index=False)
+    ff = xl.open_workbook(os.path.join(xlsx_path, xlsx_file))                    
+    s1 = ff.sheet_by_index(0)                     
+    s1.cell_value(0,0)
+    print (f"{file} : {s1.nrows - 1} row")
