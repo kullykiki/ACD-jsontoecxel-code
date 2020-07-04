@@ -12,7 +12,7 @@ pip install pandas openpyxl
 ```
 
 
-if error may be by pip not lasted version . Must upgrad pip before install pandas
+if error may be by pip not lasted version . Must upgrade pip before install pandas
 
 ```cmd
 python -m pip install --upgrade pip
